@@ -1,10 +1,12 @@
 # CLP Conan Test
 
+mkdir build
+
+conan install . --profile ../conanprofile.txt --build=missing --output-folder=build
+
 cd build
 
-conan install .. --profile ../conanprofile.txt --build=missing
-
-cmake ..
+cmake .. --preset conan-release
 
 make
 

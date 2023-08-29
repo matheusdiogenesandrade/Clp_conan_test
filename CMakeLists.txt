@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.23)
 project(CoinConanTest)
 
 ##### SETs
@@ -6,12 +6,11 @@ set (CMAKE_BUILD_TYPE Release)
 set (CMAKE_CXX_STANDARD 20)
 set (BUILD_SHARED_LIBS On)
 
-##### Includes
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
-conan_basic_setup()
-
 ##### Additional packages 
+
+find_package (coin-utils REQUIRED)
+find_package (coin-osi REQUIRED)
+find_package (coin-clp REQUIRED)
 
 ##### Include Dirs 
 
@@ -50,7 +49,6 @@ add_executable(
 
 target_link_libraries(
     main 
-    ${CONAN_LIBS} 
     pthread 
     m 
     dl

@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/matheusdiogenesandrade/ownCloud - mandrade@fdb.3nlab.org/Mandrade/coin_conan_test/build/CMakePresets.json"
+    ]
+}

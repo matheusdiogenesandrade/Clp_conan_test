@@ -1,16 +1,8 @@
 [requires]
-ninja/1.11.1
-meson/1.0.0
-bzip2/1.0.8
-zlib/1.2.13
-gnu-config/cci.20210814
-pkgconf/1.9.3
 coin-utils/2.11.6
 coin-osi/0.108.7
 coin-clp/1.17.7
 
 [generators]
-cmake
-cmake_paths
 CMakeDeps
 CMakeToolchain
