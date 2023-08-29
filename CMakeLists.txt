@@ -49,6 +49,9 @@ add_executable(
 
 target_link_libraries(
     main 
+    coin-clp::coin-clp
+    coin-osi::coin-osi
+    coin-utils::coin-utils
     pthread 
     m 
     dl
